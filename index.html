@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr. Snowman Cafe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Menu</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__link">Special</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">Mr. Snowman Cafe</h1>
+      </div>
+    </header>
 
-</body>
+    <section class="hero">
+      <div class="hero__content">
+        <h2 class="hero__title">Welcome to Mr. Snowman Cafe</h2>
+        <p class="hero__subtitle">
+          Recreating the sweet cold joy in creamy treats since 2023.
+        </p>
+        <div class="hero__buttons">
+          <a href="#" class="button button--primary">Order Now</a>
+          <a href="#" class="button button--secondary">See Menu</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="ice-cream.png" alt="Ice cream cone" />
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="categories__container">
+        <article class="category">
+          <h3 class="category__title">Desserts</h3>
+          <p class="category__description">Delicious and delightful.</p>
+        </article>
+        <article class="category">
+          <h3 class="category__title">Milk Shakes</h3>
+          <p class="category__description">Rich and creamy flavors.</p>
+        </article>
+        <article class="category">
+          <h3 class="category__title">Ice Cream</h3>
+          <p class="category__description">Classic and artisanal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="flavors">
+      <h2 class="flavors__title">Select Your Favorite Taste</h2>
+      <div class="flavors__list">
+        <article class="flavor">
+          <img src="strawberry.png" alt="Strawberry" class="flavor__image" />
+          <h3 class="flavor__name">Strawberry Bon</h3>
+        </article>
+        <article class="flavor">
+          <img src="chocolate.png" alt="Chocolate" class="flavor__image" />
+          <h3 class="flavor__name">Choco Delight</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2 class="featured__title">Featured Desserts & Treats</h2>
+      <div class="featured__list">
+        <article class="featured__item">
+          <h3 class="featured__name">Sweet Joy</h3>
+          <p class="featured__price">$10</p>
+        </article>
+        <article class="featured__item">
+          <h3 class="featured__name">Tropical Day</h3>
+          <p class="featured__price">$12</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <section class="footer__about">
+          <h2 class="footer__title">About Us</h2>
+          <p class="footer__text">Learn more about our story and mission.</p>
+        </section>
+        <section class="footer__links">
+          <h2 class="footer__title">Quick Links</h2>
+          <ul class="footer__menu">
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
