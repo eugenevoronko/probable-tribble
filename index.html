@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr. Snowman Cafe</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <link
       rel="shortcut icon"
       type="image/png"
-      href="//res2.weblium.site/res/628497bfc848a40022c2e3dc/6299b64bfa542500238435df_optimized"
+      href="/assets/images/global/mr-snowman-favicon.png"
       sizes="16x16"
     />
     <script
@@ -17,92 +17,73 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
-    <nav
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="global.header-nav.partial.html"
-  ></nav>
-    <header class="header">
-      <div class="header__container">
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a href="#" class="header__link">Home</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__link">Menu</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="#" class="header__link">Special</a>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="header__title">Mr. Snowman Cafe</h1>
-      </div>
-    </header>
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="/components/global.header.partial.html"
+    ></header>
 
-    <section class="hero">
-      <div class="hero__content">
-        <h2 class="hero__title">Welcome to Mr. Snowman Cafe</h2>
-        <p class="hero__subtitle">
-          Recreating the sweet cold joy in creamy treats since 2023.
-        </p>
-        <div class="hero__buttons">
-          <a href="#" class="button button--primary">Order Now</a>
-          <a href="#" class="button button--secondary">See Menu</a>
+    <main class="main-content">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="/components/index.hero.partial.html"
+      ></section>
+
+      <section class="products">
+        <div class="products__container">
+          <article class="product">
+            <h3 class="product__title">Desserts</h3>
+            <p class="product__description">Delicious and delightful.</p>
+          </article>
+          <article class="product">
+            <h3 class="product__title">Milk Shakes</h3>
+            <p class="product__description">Rich and creamy flavors.</p>
+          </article>
+          <article class="product">
+            <h3 class="product__title">Ice Cream</h3>
+            <p class="product__description">Classic and artisanal.</p>
+          </article>
         </div>
-      </div>
-      <div class="hero__image">
-        <img src="ice-cream.png" alt="Ice cream cone" />
-      </div>
-    </section>
+      </section>
 
-    <section class="categories">
-      <div class="categories__container">
-        <article class="category">
-          <h3 class="category__title">Desserts</h3>
-          <p class="category__description">Delicious and delightful.</p>
-        </article>
-        <article class="category">
-          <h3 class="category__title">Milk Shakes</h3>
-          <p class="category__description">Rich and creamy flavors.</p>
-        </article>
-        <article class="category">
-          <h3 class="category__title">Ice Cream</h3>
-          <p class="category__description">Classic and artisanal.</p>
-        </article>
-      </div>
-    </section>
+      <section class="flavors">
+        <h2 class="flavors__title">Select Your Favorite Taste</h2>
+        <div class="flavors__list">
+          <article class="flavor">
+            <img src="strawberry.png" alt="Strawberry" class="flavor__image" />
+            <h3 class="flavor__name">Strawberry Bon</h3>
+          </article>
+          <article class="flavor">
+            <img src="chocolate.png" alt="Chocolate" class="flavor__image" />
+            <h3 class="flavor__name">Choco Delight</h3>
+          </article>
+        </div>
+      </section>
 
-    <section class="flavors">
-      <h2 class="flavors__title">Select Your Favorite Taste</h2>
-      <div class="flavors__list">
-        <article class="flavor">
-          <img src="strawberry.png" alt="Strawberry" class="flavor__image" />
-          <h3 class="flavor__name">Strawberry Bon</h3>
-        </article>
-        <article class="flavor">
-          <img src="chocolate.png" alt="Chocolate" class="flavor__image" />
-          <h3 class="flavor__name">Choco Delight</h3>
-        </article>
-      </div>
-    </section>
+      <section class="blog">
+        <h2 class="blog__title">Blog</h2>
+        <p class="blog__description">
+          <span>Latest Articles</span>
+        </p>
+      </section>
 
-    <section class="featured">
-      <h2 class="featured__title">Featured Desserts & Treats</h2>
-      <div class="featured__list">
-        <article class="featured__item">
-          <h3 class="featured__name">Sweet Joy</h3>
-          <p class="featured__price">$10</p>
-        </article>
-        <article class="featured__item">
-          <h3 class="featured__name">Tropical Day</h3>
-          <p class="featured__price">$12</p>
-        </article>
-      </div>
-    </section>
-
+      <section class="featured">
+        <h2 class="featured__title">Featured Desserts & Treats</h2>
+        <div class="featured__list">
+          <article class="featured__item">
+            <h3 class="featured__name">Sweet Joy</h3>
+            <p class="featured__price">$10</p>
+          </article>
+          <article class="featured__item">
+            <h3 class="featured__name">Tropical Day</h3>
+            <p class="featured__price">$12</p>
+          </article>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__about">
