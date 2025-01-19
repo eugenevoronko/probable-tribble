@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr. Snowman Cafe</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
+      type="image/png"
+      href="//res2.weblium.site/res/628497bfc848a40022c2e3dc/6299b64bfa542500238435df_optimized"
+      sizes="16x16"
     />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -17,6 +18,11 @@
     ></script>
   </head>
   <body>
+    <nav
+    data-hx-trigger="load"
+    data-hx-swap="outerHTML"
+    data-hx-get="global.header-nav.partial.html"
+  ></nav>
     <header class="header">
       <div class="header__container">
         <nav class="header__nav">
