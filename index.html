@@ -22,32 +22,15 @@
     <header
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="/components/global.header.partial.html"
+      data-hx-get="/components/index.header.partial.html"
     ></header>
 
     <main class="main-content">
-      <section
+      <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="/components/index.hero.partial.html"
-      ></section>
-
-      <section class="products">
-        <div class="products__container">
-          <article class="product">
-            <h3 class="product__title">Desserts</h3>
-            <p class="product__description">Delicious and delightful.</p>
-          </article>
-          <article class="product">
-            <h3 class="product__title">Milk Shakes</h3>
-            <p class="product__description">Rich and creamy flavors.</p>
-          </article>
-          <article class="product">
-            <h3 class="product__title">Ice Cream</h3>
-            <p class="product__description">Classic and artisanal.</p>
-          </article>
-        </div>
-      </section>
+        data-hx-get="/components/index.products.partial.html"
+      ></div>
 
       <section class="flavors">
         <h2 class="flavors__title">Select Your Favorite Taste</h2>
