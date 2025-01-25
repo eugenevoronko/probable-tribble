@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mr. Snowman Cafe</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="/assets/images/global/mr-snowman-favicon.png"
-      sizes="16x16"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mr. Snowman Cafe</title>
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./assets/images/global/mr-snowman-favicon.png"
+            sizes="16x16"
+        />
+        <script
+            src="https://unpkg.com/htmx.org@1.9.10"
+            integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-  <body>
-    <header
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="/components/index.header.partial.html"
-    ></header>
+    <body>
+        <header
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="./components/index.header.partial.html"
+        ></header>
 
-    <main class="main-content">
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="/components/index.products.partial.html"
-      ></div>
+        <main class="main-content">
+            <div
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.products.partial.html"
+            ></div>
 
-      <section class="flavors">
-        <h2 class="flavors__title">Select Your Favorite Taste</h2>
-        <div class="flavors__list">
-          <article class="flavor">
-            <img src="strawberry.png" alt="Strawberry" class="flavor__image" />
-            <h3 class="flavor__name">Strawberry Bon</h3>
-          </article>
-          <article class="flavor">
-            <img src="chocolate.png" alt="Chocolate" class="flavor__image" />
-            <h3 class="flavor__name">Choco Delight</h3>
-          </article>
-        </div>
-      </section>
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.flavors.partial.html"
+            ></section>
 
-      <section class="blog">
-        <h2 class="blog__title">Blog</h2>
-        <p class="blog__description">
-          <span>Latest Articles</span>
-        </p>
-      </section>
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.ingredients.partial.html"
+            ></section>
 
-      <section class="featured">
-        <h2 class="featured__title">Featured Desserts & Treats</h2>
-        <div class="featured__list">
-          <article class="featured__item">
-            <h3 class="featured__name">Sweet Joy</h3>
-            <p class="featured__price">$10</p>
-          </article>
-          <article class="featured__item">
-            <h3 class="featured__name">Tropical Day</h3>
-            <p class="featured__price">$12</p>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__container">
-        <section class="footer__about">
-          <h2 class="footer__title">About Us</h2>
-          <p class="footer__text">Learn more about our story and mission.</p>
-        </section>
-        <section class="footer__links">
-          <h2 class="footer__title">Quick Links</h2>
-          <ul class="footer__menu">
-            <li><a href="#" class="footer__link">Contact</a></li>
-            <li><a href="#" class="footer__link">Privacy Policy</a></li>
-          </ul>
-        </section>
-      </div>
-    </footer>
-  </body>
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.our-menu.partial.html"
+            ></section>
+
+            <div
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.banner.partial.html"
+            ></div>
+
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.next-month-special.partial.html"
+            ></section>
+
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.about-us.partial.html"
+            ></section>
+
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.gallery.partial.html"
+            ></section>
+
+            <section
+                data-hx-trigger="load"
+                data-hx-swap="outerHTML"
+                data-hx-get="./components/index.blog.partial.html"
+            ></section>
+        </main>
+
+        <footer
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="./components/global.footer.partial.html"
+        ></footer>
+    </body>
 </html>

@@ -1,3 +1,4 @@
 @import "./global.css";
-@import "./global.header.css";
+@import "./global.header-nav.css";
+@import "./index.header.css";
 @import "./index.products.css";

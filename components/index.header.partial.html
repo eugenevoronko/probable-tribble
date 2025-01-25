@@ -1,7 +1,12 @@
-<header>
-  <header
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="/components/global.header.partial.html"
-  ></header>
+<header class="header">
+    <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="/components/global.header-nav.partial.html"
+    ></nav>
+    <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="/components/index.header-hero.partial.html"
+    ></div>
 </header>

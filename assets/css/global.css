@@ -1,14 +1,133 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+    font-family: "Dangrek";
+    src: url("../fonts/Dangrek/Dangrek-Regular.ttf") format("ttf");
 }
 
-html, body {
-  height: 100%;
+@font-face {
+    font-family: "Source-Sans-3";
+    src: url("../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf")
+        format("ttf");
 }
 
+@font-face {
+    font-family: "Source-Sans-3-Italic";
+    src: url("../fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf")
+        format("ttf");
+}
+
+@font-face {
+    font-family: "Leckerli-One";
+    src: url("../fonts/Source_Sans_3/SourceSans3-Italic-VariableFont_wght.ttf")
+        format("ttf");
+}
+
+/* Root variables for global styling */
+:root {
+    /* Colors */
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #493b5f;
+    --text-color: white;
+    --link-color: white;
+
+    /* Fonts */
+    --font-family-section-header: "Leckerli-One", sans-serif;
+    --font-family-title: "Dangrek", sans-serif;
+    --font-family-base: "Source-Sans-3", sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* Border radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+
+    /* Shadows */
+    --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Universal reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styling */
 body {
-  background-color: #493b5f;
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1200px;
+    /* justify-content: center; */
+
+
+}
+h2 {
+  font-family: var(--font-family-section-header);
 }
 
+/* Remove list styles */
+ol,
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/* Form elements */
+input,
+textarea,
+button,
+select {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Buttons */
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Full-height layout */
+html,
+body {
+    height: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
